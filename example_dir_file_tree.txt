@@ -1,0 +1,194 @@
+├───subdir
+│   │   document0.txt
+│   │   document1.txt
+│   │   document2.txt
+│   │
+│   ├───subdir-recursion-level-1
+│   │   │   document1.txt
+│   │   │   document2.txt
+│   │   │   document3.txt
+│   │   │
+│   │   ├───subdir-recursion-level-2
+│   │   │       document2.txt
+│   │   │       document3.txt
+│   │   │       document4.txt
+│   │   │
+│   │   ├───subdir-recursion-level-2 - Copy
+│   │   │       document3.txt
+│   │   │       document4.txt
+│   │   │       document5.txt
+│   │   │
+│   │   └───subdir-recursion-level-2 - Copy (2)
+│   │           document4.txt
+│   │           document5.txt
+│   │           document6.txt
+│   │
+│   ├───subdir-recursion-level-1 - Copy
+│   │   │   document5.txt
+│   │   │   document6.txt
+│   │   │   document7.txt
+│   │   │
+│   │   ├───subdir-recursion-level-2
+│   │   │       document6.txt
+│   │   │       document7.txt
+│   │   │       document8.txt
+│   │   │
+│   │   ├───subdir-recursion-level-2 - Copy
+│   │   │       document7.txt
+│   │   │       document8.txt
+│   │   │       document9.txt
+│   │   │
+│   │   └───subdir-recursion-level-2 - Copy (2)
+│   │           document10.txt
+│   │           document8.txt
+│   │           document9.txt
+│   │
+│   └───subdir-recursion-level-1 - Copy (2)
+│       │   document10.txt
+│       │   document11.txt
+│       │   document9.txt
+│       │
+│       ├───subdir-recursion-level-2
+│       │       document10.txt
+│       │       document11.txt
+│       │       document12.txt
+│       │
+│       ├───subdir-recursion-level-2 - Copy
+│       │       document11.txt
+│       │       document12.txt
+│       │       document13.txt
+│       │
+│       └───subdir-recursion-level-2 - Copy (2)
+│               document12.txt
+│               document13.txt
+│               document14.txt
+│
+├───subdir - Copy
+│   │   document13.txt
+│   │   document14.txt
+│   │   document15.txt
+│   │
+│   ├───subdir-recursion-level-1
+│   │   │   document14.txt
+│   │   │   document15.txt
+│   │   │   document16.txt
+│   │   │
+│   │   ├───subdir-recursion-level-2
+│   │   │       document15.txt
+│   │   │       document16.txt
+│   │   │       document17.txt
+│   │   │
+│   │   ├───subdir-recursion-level-2 - Copy
+│   │   │       document16.txt
+│   │   │       document17.txt
+│   │   │       document18.txt
+│   │   │
+│   │   └───subdir-recursion-level-2 - Copy (2)
+│   │           document17.txt
+│   │           document18.txt
+│   │           document19.txt
+│   │
+│   ├───subdir-recursion-level-1 - Copy
+│   │   │   document18.txt
+│   │   │   document19.txt
+│   │   │   document20.txt
+│   │   │
+│   │   ├───subdir-recursion-level-2
+│   │   │       document19.txt
+│   │   │       document20.txt
+│   │   │       document21.txt
+│   │   │
+│   │   ├───subdir-recursion-level-2 - Copy
+│   │   │       document20.txt
+│   │   │       document21.txt
+│   │   │       document22.txt
+│   │   │
+│   │   └───subdir-recursion-level-2 - Copy (2)
+│   │           document21.txt
+│   │           document22.txt
+│   │           document23.txt
+│   │
+│   └───subdir-recursion-level-1 - Copy (2)
+│       │   document22.txt
+│       │   document23.txt
+│       │   document24.txt
+│       │
+│       ├───subdir-recursion-level-2
+│       │       document23.txt
+│       │       document24.txt
+│       │       document25.txt
+│       │
+│       ├───subdir-recursion-level-2 - Copy
+│       │       document24.txt
+│       │       document25.txt
+│       │       document26.txt
+│       │
+│       └───subdir-recursion-level-2 - Copy (2)
+│               document25.txt
+│               document26.txt
+│               document27.txt
+│
+└───subdir - Copy (2)
+    │   document26.txt
+    │   document27.txt
+    │   document28.txt
+    │
+    ├───subdir-recursion-level-1
+    │   │   document27.txt
+    │   │   document28.txt
+    │   │   document29.txt
+    │   │
+    │   ├───subdir-recursion-level-2
+    │   │       document28.txt
+    │   │       document29.txt
+    │   │       document30.txt
+    │   │
+    │   ├───subdir-recursion-level-2 - Copy
+    │   │       document29.txt
+    │   │       document30.txt
+    │   │       document31.txt
+    │   │
+    │   └───subdir-recursion-level-2 - Copy (2)
+    │           document30.txt
+    │           document31.txt
+    │           document32.txt
+    │
+    ├───subdir-recursion-level-1 - Copy
+    │   │   document31.txt
+    │   │   document32.txt
+    │   │   document33.txt
+    │   │
+    │   ├───subdir-recursion-level-2
+    │   │       document32.txt
+    │   │       document33.txt
+    │   │       document34.txt
+    │   │
+    │   ├───subdir-recursion-level-2 - Copy
+    │   │       document33.txt
+    │   │       document34.txt
+    │   │       document35.txt
+    │   │
+    │   └───subdir-recursion-level-2 - Copy (2)
+    │           document34.txt
+    │           document35.txt
+    │           document36.txt
+    │
+    └───subdir-recursion-level-1 - Copy (2)
+        │   document35.txt
+        │   document36.txt
+        │   document37.txt
+        │
+        ├───subdir-recursion-level-2
+        │       document36.txt
+        │       document37.txt
+        │       document38.txt
+        │
+        ├───subdir-recursion-level-2 - Copy
+        │       document37.txt
+        │       document38.txt
+        │       document39.txt
+        │
+        └───subdir-recursion-level-2 - Copy (2)
+                document38.txt
+                document39.txt
+                document40.txt
