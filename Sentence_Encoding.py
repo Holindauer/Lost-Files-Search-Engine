@@ -22,7 +22,11 @@ class EncodeCorpus:
         self.dash = "-"*50 + "\n"
 
     def encode_corpus(self, corpus_path):
-        
+        '''Running the encode_corpus() function will encode the corpus using a pretrained distilbert model
+            and save the encoded corpus to the encoded_corpus.csv file. It should be noted that each document
+            was encoded into a 768 dimensional vector. The way this is represented in this CSV file is that 
+            each row is indexed by the file name and each column is a dimension of the vector.
+            '''
         #retireve model
         model = self.instantiate_model()
 

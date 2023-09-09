@@ -129,7 +129,7 @@ class BuildCorpus:
 
         #gather all file content into list
         for path in txt_paths:
-            with open(path, "r") as file: # open file in read mode
+            with open(path, "r", encoding="utf-8", errors='replace') as file: # open file in read mode -- utf-8 encoding -- replace non encoded characters with ?
                 content = file.read()
                 file_content.append(content)
 
