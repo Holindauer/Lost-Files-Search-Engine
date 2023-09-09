@@ -2,10 +2,15 @@
 A Search Engine for Lost Local Files using Semantic Search
 ----------------------------------------------------------------------------------
 
+
+## Currently, to run the search engine on a local directory, run Search.py
+
+
 This project intends to build a search engine for local files that have been lost
 somewhere within a directory. 
 
-----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------<>
+
 The current plan of action is to create a program that:
 
 1.) Uses a sentence embedding model to encode contents of all files within
@@ -17,5 +22,6 @@ The current plan of action is to create a program that:
 
 4.) Use a simmilarity function to find the file within the directory that most 
     resembles the search
-----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------<>
     
