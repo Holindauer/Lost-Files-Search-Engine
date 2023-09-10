@@ -1,1 +1,0 @@
-I will need to add a functionality that directs a process that will fille this text file with the appropriate dir

@@ -21,7 +21,7 @@ class EncodeCorpus:
         '''
         self.dash = "-"*50 + "\n"
 
-    def encode_corpus(self, corpus_path):
+    def encode_corpus(self, corpus_df):
         '''Running the encode_corpus() function will encode the corpus using a pretrained distilbert model
             and save the encoded corpus to the encoded_corpus.csv file. It should be noted that each document
             was encoded into a 768 dimensional vector. The way this is represented in this CSV file is that 
@@ -30,8 +30,8 @@ class EncodeCorpus:
         #retireve model
         model = self.instantiate_model()
 
-        #get corpus
-        file_names, file_content = self.retrieve_corpus(corpus_path)
+        #get corpus data from df as lists of strings for encoding
+        file_names, file_paths, file_content = [corpus_df[col].to_list() for col in corpus_df.columns]
 
         #encode corpus
         encoded_corpus = self.encode_sentence(model, file_content, file_names)
@@ -42,7 +42,7 @@ class EncodeCorpus:
         #convert to numpy array
         encoded_corpus = encoded_corpus.to_numpy()
 
-        return model, encoded_corpus, file_names, file_content
+        return model, encoded_corpus, file_names, file_content, file_paths
 
     
     def instantiate_model(self):
@@ -78,18 +78,6 @@ class EncodeCorpus:
 
         return model
 
-
-    def retrieve_corpus(self, corpus_path):
-        """This function retrieves the corpus from the corpus.csv file."""
-        
-        #print start message
-        print(f"{self.dash*2}\n\nRetrieving Corpus...")
-
-        #read in corpus as dataframe
-        df = pd.read_csv(corpus_path)
-
-        #return column values as lists
-        return df["File Name"].tolist(), df["File Content"].tolist()
 
 
     def encode_sentence(self, model, file_content, file_names):

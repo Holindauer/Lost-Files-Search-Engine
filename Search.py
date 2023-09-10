@@ -2,6 +2,8 @@ from Build_Corpus import BuildCorpus
 from Sentence_Encoding import EncodeCorpus
 from scipy.spatial.distance import cdist
 import numpy as np
+import subprocess
+import time
 
 '''
 This class is responsible for directing the search process. 
@@ -13,6 +15,7 @@ similarity() is then called to compute the cosise similarity between
 the query and each document in the corpus. 
 
 Cosine_Similarity = (A.dot(B)) / (||A|| * ||B||) 
+
 '''
 
 class Search_Files:
@@ -39,18 +42,18 @@ class Search_Files:
         #print start message
         print(f"{self.dash*2}\n\nWelcome to the Lost Files Search Engine...{self.dash*2}\n\n")
 
+        start_time = time.time()
         #instantiate corpus builder
         corpus_builder = BuildCorpus()
 
-        #prompt user for directory and build corpus from it
-        #the path to the corpus in csv form is returned
-        corpus_path = corpus_builder.corpus()
+        #build corpus as df
+        corpus_df = corpus_builder.corpus()
 
         #instantiate corpus encoder passing in the path to the corpus
         corpus_encoder = EncodeCorpus()
 
         #retrieve model and encode corpus with it
-        model, encoded_corpus, file_names, file_content = corpus_encoder.encode_corpus(corpus_path)
+        model, encoded_corpus, file_names, file_content, file_paths = corpus_encoder.encode_corpus(corpus_df)
 
         keep_searching = True
 
